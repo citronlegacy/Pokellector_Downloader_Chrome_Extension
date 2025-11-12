@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Pokémon Card Downloader</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 15px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+    }
+    
+    h1 {
+      font-size: 18px;
+      margin: 0 0 10px 0;
+      text-align: center;
+    }
+    
+    p {
+      font-size: 13px;
+      line-height: 1.5;
+      margin: 10px 0;
+      text-align: center;
+    }
+    
+    button {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      background-color: #ffcb05;
+      border: 2px solid #2a75bb;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 14px;
+      color: #2a75bb;
+      transition: all 0.3s ease;
+    }
+    
+    button:hover {
+      background-color: #ffd93d;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    button:active {
+      transform: translateY(0);
+    }
+    
+    .status {
+      padding: 8px;
+      margin: 10px 0;
+      border-radius: 5px;
+      font-size: 12px;
+      text-align: center;
+      display: none;
+    }
+    
+    .status.success {
+      background-color: rgba(76, 175, 80, 0.8);
+      display: block;
+    }
+    
+    .status.error {
+      background-color: rgba(244, 67, 54, 0.8);
+      display: block;
+    }
+    
+    .info {
+      font-size: 11px;
+      opacity: 0.9;
+      margin-top: 15px;
+      padding-top: 15px;
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <h1>⚡ Pokémon Card Downloader</h1>
+  <p>Download Pokémon card images from Pokellector.com</p>
+  
+  <button id="inject-btn">📥 Inject Download Button</button>
+  
+  <div id="status" class="status"></div>
+  
+  <div class="info">
+    Navigate to a Pokémon card page on pokellector.com and click the button to inject the download button on the page.
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
